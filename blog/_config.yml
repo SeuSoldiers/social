@@ -3,17 +3,25 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: '云上殿镇|红色记忆'
+subtitle: '通过数字创新连接过去与未来'
+description: '在数字时代探索殿镇村丰富的革命历史。本项目利用前沿技术保护并展示红色文化遗产，让历史故事与遗址在虚拟空间中焕发新生。通过互动的在线体验和创新的数字展示，我们致力于吸引新一代人了解和传承革命精神，确保过去的记忆继续激励未来的奋斗。'
 keywords:
-author: John Doe
-language: en
-timezone: ''
+- 殿镇村
+- 红色文化
+- 革命历史
+- 数字创新
+- 云上殿镇
+- 红色记忆
+- 革命精神
+- 遗址保护
+author: 薪火传程
+language: zh-CN
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://seusoldiers.github.io/social_web/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -96,9 +104,17 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: hexo-theme-edinburgh
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/SeuSoldiers/social_web.git
+  branch: main
+
+# Header
+menu:
+  '了解更多': /about
+  '联系方式': /contact
+  '走进周至': https://www.zhouzhi.gov.cn/rwzz/
