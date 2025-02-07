@@ -1,3 +1,15 @@
-<% page.posts.forEach(function(item){ %>
-    <%- partial('_partial/portfolio-index', {item: item}) %>
-        <% }); %>
+<div class="img-container">
+    <a href="/social_web/about">
+        <img class="main-img" src="<%- theme.main_background_image %>" alt="Main Image">
+    </a>
+</div>
+
+<div class="info-text">
+    <p><%- theme.info_text %></p>
+</div>
+
+<div class="item-container">
+    <% page.posts.forEach(function(item){ %>
+        <%- partial('_partial/portfolio-index', {item: item}) %>
+    <% }); %>
+</div>

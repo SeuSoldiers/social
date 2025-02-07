@@ -4,20 +4,20 @@
 <%- partial('_partial/head') %>
 
   <body>
-    <div class="container-fluid navbar-container">
+    <div class="navbar-container">
       <!-- Header -->
       <%- partial('_partial/header') %>
-
-        <div class="portfolio-container">
-          <%- body %>
-        </div>
-        <% if (page.total> 1) { %>
-          <nav class="page-nav">
-            <%- paginator({prev_text: '<' , next_text: '>' }) %>
-          </nav>
-          <% } %>
     </div>
-
+    <div>
+      <div class="super-container">
+        <%- body %>
+      </div>
+      <% if (page.total> 1) { %>
+        <nav class="page-nav">
+          <%- paginator({prev_text: '<' , next_text: '>' }) %>
+        </nav>
+      <% } %>
+  </div>
     <!-- After footer scripts -->
     <%- partial('_partial/footer') %>
   </body>

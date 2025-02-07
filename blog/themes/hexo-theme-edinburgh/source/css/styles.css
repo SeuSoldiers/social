@@ -1,6 +1,13 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 }
+/* 隐藏滚动条 */
+::-webkit-scrollbar {
+	width: 0;
+	/* 或者设置为不显示的宽度 */
+	height: 0;
+	/* 水平滚动条 */
+}
 
 form {
 	max-width: 500px;
@@ -40,24 +47,24 @@ textarea:focus {
 	outline: none;
 }
 
-.portfolio-container {
+
+.item-container {
+	width: 90%;
 	display: flex;
 	flex-wrap: wrap;
 	/* 让内容自动换行 */
 	justify-content: space-between;
 	/* 让两列均匀分布 */
-	width: 90%;
-	/* 设置固定宽度 */
 	margin: 0 auto;
 	/* 居中对齐 */
+	margin-bottom: 30px;
 }
 
 
 .portfolio-item {
 	width: 48%;
-	/* 让每个项目占据 48% 宽度，留一些间距 */
-	margin-bottom: 20px;
-	/* 增加间距 */
+	border-radius: 10px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -99,6 +106,17 @@ h3 {
 	font-weight: bold;
 }
 
+.navbar-container {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-bottom: 2px solid #595959;
+	padding: 15px 0;
+	border-radius: 10px 10px 0 0;
+}
+
 .navbar {
 	width: 90%;
 	margin: 0 auto;
@@ -106,10 +124,6 @@ h3 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 10px 20px;
-	background-color: #f8f9fa;
-	border-bottom: 2px solid #595959;
-	margin-bottom: 20px;
 }
 
 .navbar-brand {
@@ -168,6 +182,30 @@ h3 {
 	width: 100%;
 }
 
+.main-img,.page-img {
+	width: 100%;
+	height: 90vh;
+	border-radius: 10px;
+	object-fit: cover;
+}
+
+.page-img {
+	height: 50vh;
+}
+
+.info-text {
+	text-align: center;
+	font-size: 1.2rem;
+	margin: 20px 0;
+	color: #333;
+}
+
+.info-text p {
+	margin: 0;
+	font-weight: bold;
+}
+
+
 /* Image Hover Effect */
 
 .hovereffect {
@@ -187,7 +225,6 @@ h3 {
 	overflow: hidden;
 	top: 0;
 	left: 0;
-	border-radius: 10px;
 }
 
 .hovereffect .overlay-text {
@@ -216,7 +253,6 @@ h3 {
 	max-width: none;
 	width: 100%;
 	height: 100%;
-	border-radius: 10px;
 	transition: opacity 0.35s, transform 0.35s;
 	backface-visibility: hidden;
 }
