@@ -1,6 +1,6 @@
 ---
 title: 了解更多
-cover_image: /images/dzc.jpg
+cover_image: /images/dzc-txt.png
 ---
 
 ---
