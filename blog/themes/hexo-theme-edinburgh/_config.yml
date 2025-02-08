@@ -5,4 +5,11 @@ default_post_title: '数字影像中的红色记忆'
 main_background_image: images/dzc.jpg
 info_text: '↓  点击大图了解殿镇村详情，下滑查看更多红色故事  ↓'
 main_back_video: 'videos/dzc.mp4'
+url_root: /social_web/
 
+
+# Header
+menu:
+  '了解更多': /about
+  '联系方式': /contact
+  '走进周至': https://www.zhouzhi.gov.cn/rwzz/

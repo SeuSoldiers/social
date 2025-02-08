@@ -9,25 +9,6 @@ body {
 	/* 水平滚动条 */
 }
 
-form {
-	max-width: 500px;
-	margin: 0 auto;
-}
-
-button {
-	color: #777;
-	background: #fff;
-	padding: 4px 12px 4px 12px;
-	border: solid #777 2px;
-	transition: all 0.3s ease-in-out;
-	text-decoration: none;
-}
-
-button:hover {
-	color: #000;
-	border: solid #000 2px;
-	text-decoration: none;
-}
 
 input,
 textarea {
@@ -65,13 +46,14 @@ textarea:focus {
 	width: 48%;
 	border-radius: 10px;
 	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	margin: 10px 0;
 }
 
 
 .portfolio-content {
 	font-size: 20px;
 	line-height: 2;
-	color: #000000;
+	margin-bottom: 60px;
 }
 
 .portfolio-content a {
@@ -86,6 +68,12 @@ textarea:focus {
 	border-bottom: 1px solid #555;
 }
 
+.portfolio-content img {
+	border-radius: 10px;
+	width: 100%;
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
 .content-container {
 	width: 80%;
 	margin: 0 auto;
@@ -97,8 +85,9 @@ h2,
 h3 {
 	font-family: 'Crimson Text', sans-serif;
 	letter-spacing: 1px;
-	font-weight: 300;
+	font-weight: bold;
 	margin-bottom: 20px;
+	text-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .post-title h1 {
@@ -161,7 +150,7 @@ h3 {
 
 .nav-link:hover {
 	color: #005cdd;
-	background-color: #9bcbff;
+	background-color: rgba(155, 203, 255, 0.5);
 }
 
 .portfolio-img {
@@ -173,8 +162,10 @@ h3 {
 .project-img {
 	display: block;
 	margin: 0 auto;
-	width: 80%;
+	width: 70%;
+	max-height: 90vh;
 	object-fit: cover;
+	border-radius: 10px;
 }
 
 .img-container,.video-container {

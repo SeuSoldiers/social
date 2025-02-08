@@ -112,9 +112,3 @@ deploy:
   type: git
   repo: https://github.com/SeuSoldiers/social_web.git
   branch: main
-
-# Header
-menu:
-  '了解更多': /about
-  '联系方式': /contact
-  '走进周至': https://www.zhouzhi.gov.cn/rwzz/
