@@ -1,27 +1,30 @@
 <footer class="footer">
-    <div class="container">
-        <div class="footer-section">
-            <h3>关于我们</h3>
-            <p><%- theme.foot_about.phone %>
-            </p>
-            <p><a href="mailto:<%- theme.foot_about.email %>">
-                    <%- theme.foot_about.email %>
-                </a></p>
-            <p><%- theme.foot_about.address %>
+    <%- css('css/footer.css') %>
+    <div class="footer-container">
+        <div class="about-us">
+            <h2>关于我们</h2>
+            <p><%- theme.foot_about.phone %> | <%- theme.foot_about.address %>
             </p>
         </div>
 
-        <div class="footer-section">
-            <%- css(theme.iconfont) %>
-            <h3>关注我们</h3>
+        <div class="divider"></div>
+
+        <div class="focus-us">
+            <% theme.iconfont.forEach(function(icon) { %>
+                <%- css(icon) %>
+            <% }); %>
+            <h2>关注我们</h2>
             <ul class="social-links">
                 <% theme.media.forEach(function(platform) { %>
                     <li>
                         <a href="<%- url_for(platform.link) %>" target="_blank"
                             <% if (platform.tip) { %>
-                                aria-label="<%= platform.tip %>"
+                                title="<%= platform.tip %>"
                             <% } %>
                         >
+                            <% if (platform.tip) { %>
+                                <span><%= platform.tip %></span>
+                            <% } %>
                             <i class="<%- platform.icon %>" aria-hidden="true"></i>
                         </a>
                     </li>
@@ -29,9 +32,10 @@
             </ul>
         </div>
 
-        <div class="footer-section">
-            <h3>版权声明</h3>
-            <p>&copy; <%- new Date().getFullYear() %> 薪火传程. 保留所有权利。</p>
+        <div class="divider"></div>
+
+        <div class="copy-right">
+            <p>&copy; <%- new Date().getFullYear() %> <%= config.author %></p>
             <p>本网站内容受相关法律保护，未经授权不得转载或使用。</p>
         </div>
     </div>

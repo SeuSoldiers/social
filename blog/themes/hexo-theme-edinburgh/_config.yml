@@ -16,15 +16,20 @@ menu:
 
 foot_about:
   phone: '029-8888 8888'
-  email: 'example@example.com'
   address: '陕西省西安市周至县殿镇村'
 
-iconfont: //at.alicdn.com/t/c/font_1736178_k526ubmyhba.css
+iconfont:
+- //at.alicdn.com/t/c/font_1736178_k526ubmyhba.css
+- //at.alicdn.com/t/c/font_4823232_6grnmuy6d4c.css
+
 
 media:
-  - icon: iconfont icon-github-fill
+  - icon: iconfont icon-wechat-fill
     link: '#'
-    tip: '微信'
-  - icon: iconfont icon-github-fill
+    tip: '微信公众号'
+  - icon: iconfont icon-weibo-fill
     link: '#'
-    tip: '微博'
+    tip: '新浪微博'
+  - icon: iconfont icon-douyin
+    link: '#'
+    tip: '抖音号'
