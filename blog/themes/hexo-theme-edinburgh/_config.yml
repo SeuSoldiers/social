@@ -13,3 +13,18 @@ menu:
   '了解更多': /about
   '联系方式': /contact
   '走进周至': https://www.zhouzhi.gov.cn/rwzz/
+
+foot_about:
+  phone: '029-8888 8888'
+  email: 'example@example.com'
+  address: '陕西省西安市周至县殿镇村'
+
+iconfont: //at.alicdn.com/t/c/font_1736178_k526ubmyhba.css
+
+media:
+  - icon: iconfont icon-github-fill
+    link: '#'
+    tip: '微信'
+  - icon: iconfont icon-github-fill
+    link: '#'
+    tip: '微博'
