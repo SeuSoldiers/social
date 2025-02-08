@@ -11,6 +11,7 @@ url_root: /social_web/
 # Header
 menu:
   '了解更多': /about
+  '自然风光': /nature
   '联系方式': /contact
   '走进周至': https://www.zhouzhi.gov.cn/rwzz/
 
