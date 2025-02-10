@@ -1,7 +1,6 @@
 
 default_cover_image: images/default_back.jpg
 default_post_title: '数字影像中的红色记忆'
-main_background_image: images/dzc.jpg
 info_text: '↓  点击大图了解殿镇村详情，下滑查看更多红色故事  ↓'
 main_back_video: 'videos/dzc.mp4'
 url_root: /social_web/
@@ -18,11 +17,6 @@ foot_about:
   phone: '029-8888 8888'
   address: '陕西省西安市周至县殿镇村'
 
-iconfont:
-- //at.alicdn.com/t/c/font_1736178_k526ubmyhba.css
-- //at.alicdn.com/t/c/font_4823232_6grnmuy6d4c.css
-
-
 media:
   - icon: iconfont icon-wechat-fill
     link: '#'
@@ -33,3 +27,9 @@ media:
   - icon: iconfont icon-douyin
     link: '#'
     tip: '抖音号'
+
+
+    
+iconfont:
+- //at.alicdn.com/t/c/font_1736178_k526ubmyhba.css
+- //at.alicdn.com/t/c/font_4823232_6grnmuy6d4c.css

@@ -1,67 +1,129 @@
-# Edinburgh
+# 旅行（Travel）
 
-Edinburgh is a clean, beautiful, and responsive portfolio theme for the Hexo static site generator. View a demo of the theme [here](https://sharvaridesai.github.io/hexo-theme-edinburgh-demo/).
+Travel 是一个简洁、美观的作品集主题，适用于 Hexo 静态网站生成器。点击[这里](https://seusoldiers.github.io/social_web/)查看该主题的演示。
 
-![Screenshot of Edinburgh theme](https://sharvaridesai.github.io/hexo-theme-edinburgh-demo/images/screenshot.png)
+![Travel 主题截图](source/images/screenshot.png)
 
-### Theme installation
-From the root directory of your Hugo site, run the following command:
-```
-$ git clone https://github.com/sharvaridesai/hexo-theme-edinburgh themes/edinburgh
-```
-Then update your blog's main `_config.yml` to set the theme to `edinburgh`:
+## 主题安装
 
-i.e:
+### 从 Github 安装
 
-```
-# Extensions
-## Plugins: http://hexo.io/plugins/
-## Themes: http://hexo.io/themes/
-theme: edinburgh
+在你的 Hexo 站点的 `/themes` 目录下运行以下命令：
+
+```sh
+git clone https://github.com/harkerhand/hexo-theme-travel
 ```
 
-### Theme configuration
+### 从 npm 安装
 
-#### Header menu
-The menu is configured in your blog's `_config.yml`.
+在你的 Hexo 站点的根目录下运行一下命令：
+
+```sh
+npm install hexo-theme-travel --save
 ```
-# Header
+
+### 配置主题
+
+然后更新博客的主 `_config.yml` 文件，将主题设置为 `hexo-theme-travel`：
+
+```yaml
+# 扩展
+## 插件: http://hexo.io/plugins/
+## 主题: http://hexo.io/themes/
+theme: hexo-theme-travel
+```
+
+## 主题配置
+
+### 默认设置
+
+```yaml
+# 默认文章封面图
+default_cover_image: images/default_back.jpg
+# 默认文章标题
+default_post_title: 'Default Title'
+# 首页视频
+main_back_video: 'videos/main.mp4'
+# 首页视频下方文字
+info_text: 'Text'
+# 网站根目录（兼容性）
+url_root: '/'
+```
+
+### 头部菜单
+
+```yaml
+# 示例
 menu:
-  About: /about
-  Contact: /contact
-  Instagram: https://www.instagram.com
-  LinkedIn: https://www.linkedin.com
-  Facebook: https://www.facebook.com
+  '了解更多': /about
+  '自然风光': /nature
+  '联系方式': /contact
+  '走进周至': https://www.zhouzhi.gov.cn/rwzz/
 ```
 
-#### Favicon
-The blog's favicon can be changed by replacing the theme's favicon image in `/themes/edinburgh/source/favicon/favicon.ico`.
+注意：如果使用类似前三种的样式，需要在 `/source` 文件夹下新建同名文件夹及其 `index.md`
 
-#### Google Analytics tracking
-The Google Analytics Tracking ID is configured in the theme's `_config.yml`.
-```
-# Google Analytics Tracking ID
-google_analytics:
-```
+### 页脚信息
 
-### Post configuration
-For each post, specify additional information in the [front matter](https://hexo.io/docs/front-matter.html).
+#### 联系方式
 
-#### Post title
-Use the title to specify the text displayed as the heading for your post.
-```
-title: My Awesome Portfolio Piece
+```yaml
+foot_about:
+  phone: '8888 8888'
+  address: '地球'
 ```
 
-#### Post image
-Each post on this theme requires a cover image. If no cover image is provided, a default cover image is used. Specify your own image like this.
+#### 社交媒体
+
+```yaml
+media:
+  - icon: iconfont icon-wechat-fill
+    link: '#'
+    tip: '微信公众号'
+  - icon: iconfont icon-weibo-fill
+    link: '#'
+    tip: '新浪微博'
+  - icon: iconfont icon-douyin
+    link: '#'
+    tip: '抖音号'
 ```
-cover_image: /images/portfolio.jpg
+
+注意：图标用法参考下文 Iconfont
+
+### Iconfont 字体图标
+
+```yaml
+iconfont:
+- //at.alicdn.com/t/c/font_1736178_k526ubmyhba.css
+- //at.alicdn.com/t/c/font_4823232_6grnmuy6d4c.css
 ```
 
-### Creator
-This theme was designed and created by [Sharvari Desai](http://www.sharvaridesai.com/).
 
-## Bugs
+## 文章配置
 
-If you have a question, feature request or a bug you need me to fix, please [click here](https://github.com/sharvaridesai/hexo-theme-edinburgh/issues/new) to file an issue.
+对于每篇文章，需要在 [Front Matter](https://hexo.io/docs/front-matter.html) 中指定额外的信息。
+
+### 文章标题
+
+使用 `title` 指定文章的标题。
+
+```yaml
+title: 我的精彩作品
+```
+
+### 文章封面图
+
+本主题的每篇文章都需要一个封面图。如果没有提供封面图，将使用默认封面图。可以通过以下方式指定自己的封面图。
+
+```yaml
+cover_image: /images/cover114.jpg
+```
+
+## 主题作者
+
+此主题由 [何山](http://www.harkerhand.online/) 设计并创建。
+
+## 反馈与问题
+
+如果你有任何问题、功能请求或需要修复的 Bug，请[点击这里](https://github.com/harkerhand/hexo-theme-travel/issues/new)提交问题。
+

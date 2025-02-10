@@ -1,14 +1,15 @@
-<div class="video-container">
-    <a href="/social_web/about">
-        <video autoplay muted playsinline loop class="main-video" >
-            <source src="<%- theme.url_root %><%- theme.main_back_video %>" type="video/mp4">
-        </video>
+<% if (theme.main_back_video) { %>
+    <div class="video-container">
+        <a href="/social_web/about">
+            <video autoplay muted playsinline loop class="main-video" >
+                <source src="<%- theme.url_root %><%- theme.main_back_video %>" type="video/mp4">
+            </video>
 
-    </a>
-</div>
-
+        </a>
+    </div>
+<% } %>
 <div class="info-text">
-    <p><%- theme.info_text %></p>
+    <p><%- theme.info_text || '--------------------------' %></p>
 </div>
 
 <div class="item-container">
